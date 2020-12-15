@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Check the variables: PHPOLD => PHPNEW
 PHPOLD=7.4
 PHPNEW=8.0
 
