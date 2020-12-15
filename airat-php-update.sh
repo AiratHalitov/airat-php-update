@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Author: Airat Halitov
+# GitHub: https://github.com/AiratHalitov/airat-php-update
+# License: GPLv3
+
 # Check the variables: PHPOLD ==> PHPNEW
 PHPOLD=7.4
 PHPNEW=8.0
