@@ -8,10 +8,10 @@
 PHPOLD=7.4
 PHPNEW=8.0
 
-echo -e "Current PHP version is: $(php -v)\n"
+echo -e "\nCurrent PHP version is: $(php -v)\n"
 
 if [[ "$PHPOLD" != "$PHPNEW" ]]; then
-    dpkg -l | grep php$PHPOLD | awk '{print $2;}' > php$PHPOLD.txt
+    dpkg -l | grep php$PHPOLD | awk '{print $2;}' | sort -r > php$PHPOLD.txt
     cp php$PHPOLD.txt php$PHPNEW.txt
 
     sed "s/$PHPOLD/$PHPNEW/g" -i php$PHPNEW.txt
