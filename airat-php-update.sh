@@ -29,7 +29,7 @@ if [[ "$PHPOLD" != "$PHPNEW" ]]; then
     sudo apt remove $(cat php$PHPOLD.txt)
     # or with cleaning:
     #sudo apt purge $(cat php$PHPOLD.txt)
-    sudo apt update
+    sudo apt update && sudo apt clean
 
     echo -e "\nCurrent PHP version is: $(php -v)\nDone!"
 else
